@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Японские БАДы Shiseido в Казахстане | BEVERLee beLEEver</title>
+  <meta name="description" content="BEVERLee BELEEVER (Беверли Беливер) — партнер производителя Shiseido Pharmaceutical на рынке СНГ. Японские комплексы для здоровья, коралловый кальций, Magic Pack с доставкой.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- ВЕРХНЯЯ ИНФО-ПАНЕЛЬ -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <a href="tel:+77074747989" class="top-contact-link">
+          <i class="fas fa-phone-volume"></i> +7 (707)4747989
+        </a>
+        <a href="javascript:void(0)" onclick="orderInWhatsApp()" class="top-order-badge">
+          <i class="fab fa-whatsapp"></i> Прием заказов — WhatsApp
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-social-links">
+          <a href="https://wa.me/+77074747989" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://t.me/beleever_life" target="_blank" rel="noopener" title="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="https://www.instagram.com/aigerim_astanakz?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ОСНОВНОЙ ХЕДЕР И НАВИГАЦИЯ -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <div class="logo-wrapper">
+        <a href="index.html">
+          <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/06/log_red_beleever_beverlee_shop.png" alt="BEVERLee BELEEVER Логотип" class="site-logo">
+        </a>
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Главная</a>
+          <a href="product.html" class="nav-link">Продукция</a>
+          <a href="company.html" class="nav-link">О компании</a>
+          <a href="results.html" class="nav-link">Результаты и отзывы</a>
+          <a href="contact.html" class="nav-link">Контакты</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-whatsapp btn-sm" onclick="orderInWhatsApp()">
+          <i class="fab fa-whatsapp"></i> Заказать
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- СТРОКА ПРИВЕТСТВИЯ -->
+  <div class="welcome-strip">
+    <div class="container">
+      <h2>Добро пожаловать в интернет-магазин партнеров <span>BEVERLEE - BELEEVER</span>!</h2>
+    </div>
+  </div>
+
+  <!-- ГЛАВНЫЙ ИНТЕРАКТИВНЫЙ СЛАЙДЕР -->
+  <section class="hero-slider-section" id="heroSlider">
+    <div class="slider-container">
+      <div class="slider-track">
+        <!-- Слайд 1 -->
+        <div class="slide active" style="background-image: url('https://beverlee-beleever.kz/wp-content/uploads/2023/08/Slider_ru_01_04.webp');">
+          <div class="slide-overlay"></div>
+          <div class="container">
+            <div class="slide-content">
+              <span class="slide-badge">Shiseido Pharmaceutical</span>
+              <h1 class="slide-title">Каталог продукции <span>BEVERLee BELEEVER</span></h1>
+              <p class="slide-desc">Японские минеральные комплексы нового поколения для здоровья, долголетия и активной жизни.</p>
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <a href="product.html" class="btn btn-primary">Смотреть продукцию</a>
+                <button class="btn btn-gold" onclick="orderInWhatsApp()">Консультация эксперта</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Слайд 2 -->
+        <div class="slide" style="background-image: url('https://beverlee-beleever.kz/wp-content/uploads/2023/08/Slider_ru_02_03.webp');">
+          <div class="slide-overlay"></div>
+          <div class="container">
+            <div class="slide-content">
+              <span class="slide-badge">Остров Окинава</span>
+              <h2 class="slide-title">Активный <span>Коралловый Кальций</span></h2>
+              <p class="slide-desc">100% натуральный природный минерал высокой усвояемости (97%) с содержанием порядка 55 микроэлементов.</p>
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <button class="btn btn-primary" onclick="orderInWhatsApp('Активный коралловый кальций')">Купить по спеццене</button>
+                <a href="product.html" class="btn btn-outline" style="border-color: #fff; color: #fff;">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Слайд 3 -->
+        <div class="slide" style="background-image: url('https://beverlee-beleever.kz/wp-content/uploads/2023/08/Slider_ru_03_03.webp');">
+          <div class="slide-overlay"></div>
+          <div class="container">
+            <div class="slide-content">
+              <span class="slide-badge">Флагманская программа</span>
+              <h2 class="slide-title">Magic Pack <span>(Мэджик Пак)</span></h2>
+              <p class="slide-desc">Комплексная программа оздоровления: Коралловый Кальций + Коэнзим QH и Лактобактерии. Энергия и защита клеток.</p>
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <button class="btn btn-primary" onclick="orderInWhatsApp('Magic Pack')">Заказать Magic Pack</button>
+                <a href="product.html" class="btn btn-gold">Все программы</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Слайд 4 -->
+        <div class="slide" style="background-image: url('https://beverlee-beleever.kz/wp-content/uploads/Slider_ru_04.webp');">
+          <div class="slide-overlay"></div>
+          <div class="container">
+            <div class="slide-content">
+              <span class="slide-badge">Детоксикация и защита</span>
+              <h2 class="slide-title">Top Detox <span>(Топ Детокс)</span></h2>
+              <p class="slide-desc">Глубокое очищение печени, кишечника и сосудов от шлаков и токсинов. Восстановление метаболизма.</p>
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <button class="btn btn-primary" onclick="orderInWhatsApp('Top Detox')">Заказать Top Detox</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Слайд 5 -->
+        <div class="slide" style="background-image: url('https://beverlee-beleever.kz/wp-content/uploads/191124555.webp');">
+          <div class="slide-overlay"></div>
+          <div class="container">
+            <div class="slide-content">
+              <span class="slide-badge">Здоровье сердца и сосудов</span>
+              <h2 class="slide-title">Super Omega <span>(Супер Омега)</span></h2>
+              <p class="slide-desc">Мощная формула: Высокоочищенная Омега-3, Наттокиназа и Сквален для чистоты и эластичности сосудов.</p>
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <button class="btn btn-primary" onclick="orderInWhatsApp('Super Omega')">Заказать Super Omega</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Кнопки управления слайдером -->
+      <button class="slider-btn prev" id="prevSlide" aria-label="Предыдущий слайд"><i class="fas fa-chevron-left"></i></button>
+      <button class="slider-btn next" id="nextSlide" aria-label="Следующий слайд"><i class="fas fa-chevron-right"></i></button>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <!-- БЛОК СДЕЛАНО В ЯПОНИИ / SHISEIDO -->
+  <section class="shiseido-feature">
+    <div class="container">
+      <div class="shiseido-grid">
+        <div class="shiseido-content">
+          <div class="tag-flag">
+            <span>🇯🇵</span> СДЕЛАНО В ЯПОНИИ
+          </div>
+          <h2>Японские технологии SHISEIDO</h2>
+          <div class="subtitle">Инновационная продукция Shiseido Pharmaceutical для здоровья и активного долголетия</div>
+          
+          <div class="shiseido-text">
+            <p><strong>BEVERLee BELEEVER</strong> является официальным эксклюзивным партнером легендарного японского фармацевтического завода <strong>Shiseido Pharmaceutical</strong> (АО «Shiseido Seiyaku Corporation»), основанного еще в 1917 году.</p>
+            <p>Каждый комплекс создается на сверхсовременных высокотехнологичных производственных линиях в Японии с многоуровневым контролем чистоты, подлинности и биодоступности ингредиентов.</p>
+          </div>
+
+          <div class="shiseido-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-history"></i>
+              <div>
+                <strong>Более 100 лет опыта</strong>
+                <span>Традиции фармацевтики с 1917 г.</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-award"></i>
+              <div>
+                <strong>Международный стандарт GMP</strong>
+                <span>Высшие стандарты FSSC & ISO</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-leaf"></i>
+              <div>
+                <strong>100% натуральный состав</strong>
+                <span>Морские минералы Окинавы</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <strong>Гарантия подлинности</strong>
+                <span>Прямые поставки из Японии</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="product.html" class="btn btn-primary">Перейти в каталог</a>
+            <a href="company.html" class="btn btn-outline">О компании</a>
+          </div>
+        </div>
+
+        <div class="shiseido-image-wrap">
+          <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/08/Shiseido_01.webp" alt="Завод Shiseido Pharmaceutical" class="shiseido-main-img">
+          <div class="shiseido-badge-overlay">
+            <div class="badge-years">100+</div>
+            <div class="badge-text">Лет традиций японского качества и здоровья</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- СЕКЦИЯ КАТАЛОГА ПРОДУКЦИИ -->
+  <section class="catalog-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Каталог комплексов</span>
+        <h2 class="section-title">Оздоравливающая продукция BEVERLee BELEEVER</h2>
+        <p class="section-subtitle">Оригинальные биокомплексы клеточного питания Shiseido Pharmaceutical с подтвержденной эффективностью.</p>
+      </div>
+
+      <!-- Вкладки категорий -->
+      <div class="catalog-tabs">
+        <button class="catalog-tab active" data-category="all">Все продукты</button>
+        <button class="catalog-tab" data-category="health">Здоровье и кости</button>
+        <button class="catalog-tab" data-category="energy">Энергия и сосуды</button>
+        <button class="catalog-tab" data-category="detox">Очищение и детокс</button>
+        <button class="catalog-tab" data-category="packs">Оздоровительные наборы</button>
+      </div>
+
+      <!-- Сетка продуктов -->
+      <div class="products-grid">
+        <!-- Продукт 1: ElitPack -->
+        <div class="product-card" data-category="packs">
+          <span class="product-badge">Премиум набор</span>
+          <div class="product-img-box">
+            <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/07/elitpack.webp" alt="ElitPack">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Оздоровительный набор</div>
+            <h3 class="product-name">ElitPack</h3>
+            <p class="product-desc">✓ Активный коралловый кальций
+✓ Коэнзим QH + Лактобактерии
+✓ Японский горный женьшень
+Омолаживает организм и продлевает жизнь человека.</p>
+            <div class="product-footer">
+              <button class="btn btn-whatsapp btn-sm" onclick="orderInWhatsApp('ElitPack')">
+                <i class="fab fa-whatsapp"></i> Заказать
+              </button>
+              <a href="product.html" class="btn btn-outline btn-sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Продукт 2: Активный коралловый кальций -->
+        <div class="product-card" data-category="health">
+          <span class="product-badge">Хит продаж</span>
+          <div class="product-img-box">
+            <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/07/AKK_lee_shop.png" alt="Активный коралловый кальций">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Минеральный комплекс</div>
+            <h3 class="product-name">Активный коралловый кальций</h3>
+            <p class="product-desc">✓ Коралловый кальций острова Окинава
+✓ Около 55 видов микроэлементов в 1 таблетке
+✓ Усвояемость 97% благодаря природной формуле</p>
+            <div class="product-footer">
+              <button class="btn btn-whatsapp btn-sm" onclick="orderInWhatsApp('Активный коралловый кальций')">
+                <i class="fab fa-whatsapp"></i> Заказать
+              </button>
+              <a href="product.html" class="btn btn-outline btn-sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Продукт 3: Magic Pack -->
+        <div class="product-card" data-category="packs">
+          <span class="product-badge">Базовая программа</span>
+          <div class="product-img-box">
+            <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/07/magic-pack-kz-ru.webp" alt="Magic Pack">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Оздоровительный набор</div>
+            <h3 class="product-name">Magic Pack (Мэджик Пак)</h3>
+            <p class="product-desc">✓ Активный коралловый кальций (5 упаковок)
+✓ Коэнзим QH + Лактобактерии (3 упаковки)
+Программа клеточного оздоровления организма.</p>
+            <div class="product-footer">
+              <button class="btn btn-whatsapp btn-sm" onclick="orderInWhatsApp('Magic Pack')">
+                <i class="fab fa-whatsapp"></i> Заказать
+              </button>
+              <a href="product.html" class="btn btn-outline btn-sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Продукт 4: RootLife -->
+        <div class="product-card" data-category="energy">
+          <span class="product-badge">Горный женьшень</span>
+          <div class="product-img-box">
+            <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/07/rootlife-kz.webp" alt="RootLife">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Иммунитет и долголетие</div>
+            <h3 class="product-name">RootLife (РутЛайф)</h3>
+            <p class="product-desc">✓ Японский дикорастущий горный женьшень
+✓ Возраст корня: 7–9 лет
+✓ 73 ценных питательных вещества и аминокислоты</p>
+            <div class="product-footer">
+              <button class="btn btn-whatsapp btn-sm" onclick="orderInWhatsApp('RootLife')">
+                <i class="fab fa-whatsapp"></i> Заказать
+              </button>
+              <a href="product.html" class="btn btn-outline btn-sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Продукт 5: Super Omega -->
+        <div class="product-card" data-category="energy">
+          <span class="product-badge">Сердце и сосуды</span>
+          <div class="product-img-box">
+            <img src="https://beverlee-beleever.kz/wp-content/uploads/191124555.webp" alt="Super Omega">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Сердечно-сосудистая система</div>
+            <h3 class="product-name">Super Omega</h3>
+            <p class="product-desc">✓ Омега-3 высокой концентрации
+✓ Наттокиназа (очищение сосудов от тромбов)
+✓ Сквален глубоководной акулы (кислород для клеток)</p>
+            <div class="product-footer">
+              <button class="btn btn-whatsapp btn-sm" onclick="orderInWhatsApp('Super Omega')">
+                <i class="fab fa-whatsapp"></i> Заказать
+              </button>
+              <a href="product.html" class="btn btn-outline btn-sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Продукт 6: Top Detox -->
+        <div class="product-card" data-category="detox">
+          <span class="product-badge">Очищение</span>
+          <div class="product-img-box">
+            <img src="https://beverlee-beleever.kz/wp-content/uploads/Slider_ru_04.webp" alt="Top Detox">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Детоксикация и ЖКТ</div>
+            <h3 class="product-name">Top Detox</h3>
+            <p class="product-desc">✓ Очищение печени и нормализация работы ЖКТ
+✓ Выведение токсинов и тяжелых металлов
+✓ Улучшение цвета кожи и общего тонуса</p>
+            <div class="product-footer">
+              <button class="btn btn-whatsapp btn-sm" onclick="orderInWhatsApp('Top Detox')">
+                <i class="fab fa-whatsapp"></i> Заказать
+              </button>
+              <a href="product.html" class="btn btn-outline btn-sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Продукт 7: For Beauty -->
+        <div class="product-card" data-category="health">
+          <span class="product-badge">Красота и молодость</span>
+          <div class="product-img-box">
+            <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/07/elitpack.webp" alt="For Beauty">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Нутрикосметика</div>
+            <h3 class="product-name">For Beauty (Фор Бьюти)</h3>
+            <p class="product-desc">✓ Морской рыбный коллаген и эластин
+✓ Гиалуроновая кислота и церамиды
+✓ Упругость кожи, укрепление суставов и связок</p>
+            <div class="product-footer">
+              <button class="btn btn-whatsapp btn-sm" onclick="orderInWhatsApp('For Beauty')">
+                <i class="fab fa-whatsapp"></i> Заказать
+              </button>
+              <a href="product.html" class="btn btn-outline btn-sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Продукт 8: Top Force -->
+        <div class="product-card" data-category="health">
+          <span class="product-badge">Энергия и сахар</span>
+          <div class="product-img-box">
+            <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/07/AKK_lee_shop.png" alt="Top Force">
+          </div>
+          <div class="product-info">
+            <div class="product-category">Метаболизм и сахар</div>
+            <h3 class="product-name">Top Force (Топ Форс)</h3>
+            <p class="product-desc">✓ Горец птичий и японский топинамбур
+✓ Натуральный инулин и полифенолы
+✓ Нормализация уровня сахара и снижение веса</p>
+            <div class="product-footer">
+              <button class="btn btn-whatsapp btn-sm" onclick="orderInWhatsApp('Top Force')">
+                <i class="fab fa-whatsapp"></i> Заказать
+              </button>
+              <a href="product.html" class="btn btn-outline btn-sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- СЕКЦИЯ СЕРТИФИКАЦИИ И СТАНДАРТОВ КАЧЕСТВА -->
+  <section class="certification-section">
+    <div class="container">
+      <div class="cert-grid">
+        <div class="cert-content">
+          <span class="section-tag">Высшие мировые стандарты</span>
+          <h2>Продукция 100% сертифицирована</h2>
+          <p class="cert-desc">
+            Продукция <strong>BEVERLee BELEEVER</strong> производится на заводе <strong>Shiseido Pharmaceutical</strong>. Весь цикл изготовления проходит под строжайшим фармацевтическим надзором качества Японии.<br><br>
+            Завод обладает сертификатами FSSC 22000, ISO 9001 и ISO 14001, стандартом <strong>GMP (Good Manufacturing Practice)</strong>, знаком <strong>Халяль</strong>, а также полным пакетом государственной регистрации качества в Казахстане и ЕАЭС.
+          </p>
+
+          <div class="cert-standards-row">
+            <div class="cert-logo-box">
+              <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/08/gmp.png" alt="GMP Certified">
+            </div>
+            <div class="cert-logo-box">
+              <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/08/pngegg-1.png" alt="ISO Quality">
+            </div>
+            <ul class="cert-standards-list">
+              <li><i class="fas fa-check-circle"></i> FSSC 22000 / ISO 9001 / ISO 14001</li>
+              <li><i class="fas fa-check-circle"></i> Международный стандарт GMP</li>
+              <li><i class="fas fa-check-circle"></i> Сертификат Халяль (Halal)</li>
+              <li><i class="fas fa-check-circle"></i> Свидетельства госрегистрации РК и ЕАЭС</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cert-gallery-wrap">
+          <div class="cert-gallery-grid">
+            <div class="cert-card" data-full-img="https://beverlee-beleever.kz/wp-content/uploads/2023/08/certificate-73342514.webp" data-caption="Сертификат стандарта GMP (Good Manufacturing Practice)">
+              <div class="cert-img-wrap">
+                <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/08/certificate-73342514-212x300.webp" alt="Сертификат GMP">
+              </div>
+              <div class="cert-title">Сертификат GMP</div>
+            </div>
+
+            <div class="cert-card" data-full-img="https://beverlee-beleever.kz/wp-content/uploads/2023/08/certificate-73342513.webp" data-caption="Сертификат соответствия нормам Халяль (Halal)">
+              <div class="cert-img-wrap">
+                <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/08/certificate-73342513-212x300.webp" alt="Сертификат Халяль">
+              </div>
+              <div class="cert-title">Сертификат Халяль</div>
+            </div>
+
+            <div class="cert-card" data-full-img="https://beverlee-beleever.kz/wp-content/uploads/2023/08/certificate-7334251.webp" data-caption="Свидетельство о госрегистрации Активный Коралловый Кальций">
+              <div class="cert-img-wrap">
+                <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/08/certificate-7334251-212x300.webp" alt="Госрегистрация Коралловый Кальций">
+              </div>
+              <div class="cert-title">Госрегистрация Кальций</div>
+            </div>
+
+            <div class="cert-card" data-full-img="https://beverlee-beleever.kz/wp-content/uploads/2023/08/certificate-73342511.webp" data-caption="Свидетельство госрегистрации RootLife Японский горный женьшень">
+              <div class="cert-img-wrap">
+                <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/08/certificate-73342511-212x300.webp" alt="Госрегистрация RootLife">
+              </div>
+              <div class="cert-title">Госрегистрация RootLife</div>
+            </div>
+
+            <div class="cert-card" data-full-img="https://beverlee-beleever.kz/wp-content/uploads/2023/08/certificate-7334259.webp" data-caption="Свидетельство госрегистрации Super Omega">
+              <div class="cert-img-wrap">
+                <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/08/certificate-7334259-212x300.webp" alt="Госрегистрация Super Omega">
+              </div>
+              <div class="cert-title">Госрегистрация Super Omega</div>
+            </div>
+
+            <div class="cert-card" data-full-img="https://beverlee-beleever.kz/wp-content/uploads/2023/08/certificate-7334257.webp" data-caption="Свидетельство госрегистрации For Beauty">
+              <div class="cert-img-wrap">
+                <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/08/certificate-7334257-212x300.webp" alt="Госрегистрация For Beauty">
+              </div>
+              <div class="cert-title">Госрегистрация For Beauty</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA БЛОК ОТЗЫВОВ И РЕЗУЛЬТАТОВ -->
+  <section class="reviews-cta-section">
+    <div class="container">
+      <div class="reviews-cta-inner">
+        <span class="section-tag">Реальный опыт людей</span>
+        <h2>Что говорят наши клиенты?</h2>
+        <p>Тысячи людей в Казахстане и странах СНГ восстановили здоровье суставов, сосудов, повысили иммунитет и улучшили самочувствие с помощью комплексов BEVERLee BELEEVER.</p>
+        <a href="results.html" class="btn btn-gold">
+          <i class="far fa-arrow-alt-circle-right"></i> Смотреть результаты и отзывы
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ СЕКЦИЯ (ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ) -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq-layout">
+        <div class="faq-info-card">
+          <span class="section-tag">База знаний</span>
+          <h3>Часто задаваемые вопросы</h3>
+          <p>Здесь собраны ответы на ключевые вопросы о покупке продукции, способах оплаты, доставке и программе лояльности. Если у вас остался вопрос — напишите нашему консультанту!</p>
+          <a href="contact.html" class="btn btn-primary" style="width: 100%;">
+            <i class="fas fa-headset"></i> Контакты для связи
+          </a>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- Вопрос 1 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <div class="faq-question">BEVERLee BELEEVER что за компания?</div>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </div>
+            <div class="faq-body">
+              <div class="faq-content">
+                <p><strong>BEVERLee BELEEVER</strong> (Беверли Беливер) — это международная компания, которая продвигает премиальные японские комплексы для клеточного питания и всесторонней поддержки здоровья.</p>
+                <p>Продукция производится по эксклюзивному договору с <strong>Shiseido Pharmaceutical</strong> — одним из старейших фармацевтических заводов Японии. Эти формулы эксклюзивны, не продаются в обычных масс-маркет аптеках и изготавливаются по высшим стандартам GMP.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вопрос 2 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <div class="faq-question">Как сделать заказ и оплату продукции?</div>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </div>
+            <div class="faq-body">
+              <div class="faq-content">
+                <p>Оформление заказа происходит максимально просто и безопасно:</p>
+                <p>1. <strong>Регистрация и консультация</strong>: вы связываетесь с нами, мы помогаем открыть персональный клиентский номер в системе компании.<br>
+                2. <strong>Оформление заказа</strong>: выбор необходимых комплексов в личном кабинете.<br>
+                3. <strong>Оплата</strong>: через официальную безопасную платежную систему <em>BEVERLee BANK</em>.<br>
+                4. <strong>Доставка</strong>: курьерская доставка оригинальной продукции прямо до двери вашего дома.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вопрос 3 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <div class="faq-question">Как выбрать подходящий продукт для меня?</div>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </div>
+            <div class="faq-body">
+              <div class="faq-content">
+                <p>В качестве основы оздоровления рекомендуется флагманский комплекс <strong>ElitPack</strong> или <strong>Magic Pack</strong>, включающий в себя активный коралловый кальций и коэнзим QH с лактобактериями:</p>
+                <p>• <strong>Активный коралловый кальций</strong> — восполняет дефицит минералов (55 элементов), укрепляет кости, зубы и суставы.<br>
+                • <strong>Коэнзим QH</strong> — восстанавливает выработку энергии в митохондриях клеток и защищает сердце.<br>
+                • <strong>Японский женьшень (RootLife)</strong> — укрепляет иммунитет и запускает процессы омоложения.<br>
+                Свяжитесь с нами для индивидуального подбора под ваши цели!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вопрос 4 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <div class="faq-question">Сколько стоит доставка в мой город?</div>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </div>
+            <div class="faq-body">
+              <div class="faq-content">
+                <p>Доставка в города Казахстана (Астана, Алматы, Шымкент, Караганда, Актобе, Атырау, Павлодар, Усть-Каменогорск и др.), а также в страны ЕАЭС, Узбекистан, Турцию и Таджикистан <strong>уже включена в стоимость заказа</strong> при оформлении через систему компании.</p>
+                <p>Доставка в страны Европы и другие регионы мира также доступна и рассчитывается по стандартному курьерскому тарифу (около 35$).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вопрос 5 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <div class="faq-question">Есть ли скидки и программа бонусов?</div>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </div>
+            <div class="faq-body">
+              <div class="faq-content">
+                <p>В компании действует щедрая <strong>программа лояльности клиентов</strong>. При рекомендации продукции вашим близким и друзьям вам начисляются баллы и бонусы, которые можно использовать для получения продукции с большой скидкой или полностью бесплатно.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вопрос 6 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <div class="faq-question">Почему продукция стоит своих денег?</div>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </div>
+            <div class="faq-body">
+              <div class="faq-content">
+                <p>Японское качество — это мировой эталон чистоты и эффективности. В отличие от дешевых синтетических аналогов, продукция Shiseido создана из натурального глубоководного кораллового сырья с усвояемостью до 97%, что подтверждено клиническими сертификатами GMP и FSSC.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФУТЕР САЙТА -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Колонка 1: Бренд и Shiseido -->
+        <div class="footer-col footer-brand">
+          <a href="index.html">
+            <img src="https://beverlee-beleever.kz/wp-content/uploads/2023/06/log_red_beleever_beverlee_shop.png" alt="BEVERLee BELEEVER" class="footer-logo">
+          </a>
+          <p class="footer-desc">
+            Официальный интернет-магазин партнеров компании BEVERLee BELEEVER. Оригинальные японские комплексы от производителя Shiseido Pharmaceutical с доставкой по Казахстану и миру.
+          </p>
+          <div class="footer-partner-badge">
+            <img src="https://beverlee-beleever.kz/wp-content/uploads/log_shiseido_t.png" alt="Shiseido Logo">
+            <div class="footer-partner-text">
+              Представительство японской компании АО «Shiseido Seiyaku Corporation» (с 1917 г.)
+            </div>
+          </div>
+          <div class="footer-social-icons">
+            <a href="https://wa.me/+77074747989" target="_blank" rel="noopener" class="social-icon-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/beleever_life" target="_blank" rel="noopener" class="social-icon-btn" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="tel:+77074747989" class="social-icon-btn" title="Телефон"><i class="fas fa-phone-alt"></i></a>
+            <a href="https://www.instagram.com/aigerim_astanakz?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Колонка 2: Быстрые ссылки -->
+        <div class="footer-col">
+          <h4>Быстрые ссылки</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fas fa-angle-right"></i> Главная</a></li>
+            <li><a href="product.html"><i class="fas fa-angle-right"></i> Каталог продукции</a></li>
+            <li><a href="company.html"><i class="fas fa-angle-right"></i> О компании</a></li>
+            <li><a href="results.html"><i class="fas fa-angle-right"></i> Результаты и отзывы</a></li>
+            <li><a href="contact.html"><i class="fas fa-angle-right"></i> Контакты и связь</a></li>
+            <li><a href="javascript:void(0)" onclick="orderInWhatsApp()"><i class="fas fa-angle-right"></i> Заявка на консультацию</a></li>
+          </ul>
+        </div>
+
+        <!-- Колонка 3: Продукция -->
+        <div class="footer-col">
+          <h4>Продукция Shiseido</h4>
+          <ul class="footer-links-list">
+            <li><a href="product.html"><i class="fas fa-angle-right"></i> Magic Pack</a></li>
+            <li><a href="product.html"><i class="fas fa-angle-right"></i> Активный коралловый кальций</a></li>
+            <li><a href="product.html"><i class="fas fa-angle-right"></i> Японский горный женьшень</a></li>
+            <li><a href="product.html"><i class="fas fa-angle-right"></i> ElitPack</a></li>
+            <li><a href="product.html"><i class="fas fa-angle-right"></i> Super Omega</a></li>
+            <li><a href="product.html"><i class="fas fa-angle-right"></i> Top Detox</a></li>
+            <li><a href="product.html"><i class="fas fa-angle-right"></i> For Beauty</a></li>
+          </ul>
+        </div>
+
+        <!-- Колонка 4: Личные кабинеты -->
+        <div class="footer-col">
+          <h4>Личные кабинеты</h4>
+          <div class="cabinet-buttons">
+            <a href="https://beverlee-club.com/club/OnlineShop/" target="_blank" rel="nofollow" class="cabinet-btn">
+              <span>Вход в Magic</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://beauty.beverlee-club.com/club/OnlineShop/" target="_blank" rel="nofollow" class="cabinet-btn">
+              <span>Вход в Beauty</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://beverleebank.net/login" target="_blank" rel="nofollow" class="cabinet-btn">
+              <span>BEVERLee BANK</span>
+              <i class="fas fa-wallet"></i>
+            </a>
+          </div>
+          <div style="margin-top: 20px; font-size: 13px; color: #888;">
+            <p><i class="fas fa-clock"></i> Прием заказов: 24/7 (онлайн)</p>
+            <p><i class="fas fa-truck"></i> Доставка до двери</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <div>Copyright © 2026 Shiseido Pharmaceutical in Kazakhstan | BEVERLee - beLEEver</div>
+          <div>Все права защищены. Официальная сертифицированная продукция.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ПЛАВАЮЩАЯ КНОПКА WHATSAPP -->
+  <div class="floating-whatsapp">
+    <a href="javascript:void(0)" onclick="orderInWhatsApp()" class="whatsapp-pulse-btn" title="Написать в WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- МОДАЛЬНОЕ ОКНО ПРОСМОТРА СЕРТИФИКАТОВ (LIGHTBOX) -->
+  <div class="cert-modal" id="certModal">
+    <div class="cert-modal-box">
+      <button class="cert-modal-close" id="certModalClose">&times;</button>
+      <img src="" alt="Сертификат" class="cert-modal-img" id="certModalImg">
+      <div class="cert-modal-caption" id="certModalCaption"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
